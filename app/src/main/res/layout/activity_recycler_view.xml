@@ -4,9 +4,9 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <Button
-        android:id="@+id/btnRecyclerView"
-        android:text="Recycler View"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </LinearLayout>
