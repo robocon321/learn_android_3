@@ -10,7 +10,7 @@ import android.widget.Button;
 import com.example.learnandroid3.R;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnRecyclerView;
+    Button btnRecyclerView, btnTabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void addControls(){
         btnRecyclerView = findViewById(R.id.btnRecyclerView);
+        btnTabLayout = findViewById(R.id.btnTabLayout);
     }
 
     public void setEVents(){
@@ -29,6 +30,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnTabLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TabLayoutActivity.class);
                 startActivity(intent);
             }
         });
