@@ -11,7 +11,7 @@ import com.example.learnandroid3.R;
 import com.example.learnandroid3.utils.MessageService;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnRecyclerView, btnTabLayout, btnWindowManager;
+    Button btnRecyclerView, btnTabLayout, btnWindowManager, btnContact;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         btnRecyclerView = findViewById(R.id.btnRecyclerView);
         btnTabLayout = findViewById(R.id.btnTabLayout);
         btnWindowManager = findViewById(R.id.btnWindowManager);
+        btnContact = findViewById(R.id.btnContact);
     }
 
     public void setEVents(){
@@ -50,6 +51,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, MessageService.class);
                 startService(intent);
                 finish();
+            }
+        });
+
+        btnContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ContactActivity.class);
+                startActivity(intent);
             }
         });
     }
