@@ -5,28 +5,23 @@
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <Button
-        android:id="@+id/btnRecyclerView"
-        android:text="Recycler View"
+        android:id="@+id/btnReadURL"
+        android:text="READ URL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <Button
-        android:id="@+id/btnTabLayout"
-        android:text="TabLayout"
+        android:id="@+id/btnReadImage"
+        android:text="READ IMAGE"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <Button
-        android:id="@+id/btnWindowManager"
-        android:text="Window Manager"
+        android:id="@+id/btnPostRequest"
+        android:text="Post request"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <Button
-        android:id="@+id/btnContact"
-        android:text="Contact"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:id="@+id/btnOkHttp"
-        android:text="OkHttp"
+        android:id="@+id/btnUpload"
+        android:text="Upload file"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </LinearLayout>
