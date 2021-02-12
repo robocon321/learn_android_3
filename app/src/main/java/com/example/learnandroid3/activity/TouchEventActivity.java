@@ -53,5 +53,11 @@ public class TouchEventActivity extends AppCompatActivity {
             super.onShowPress(e);
             txtTouch.setText("onShowPress");
         }
+
+        @Override
+        public boolean onSingleTapUp(MotionEvent e) {
+            txtTouch.setText("onSingleTapUp");
+            return super.onSingleTapUp(e);
+        }
     }
 }
