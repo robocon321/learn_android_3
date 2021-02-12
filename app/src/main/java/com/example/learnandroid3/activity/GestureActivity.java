@@ -11,7 +11,7 @@ import android.widget.Button;
 import com.example.learnandroid3.R;
 
 public class GestureActivity extends AppCompatActivity {
-    Button btnTouchEvent, btnSwipe;
+    Button btnTouchEvent, btnSwipe, btnMove;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class GestureActivity extends AppCompatActivity {
     public void addControls(){
         btnTouchEvent = findViewById(R.id.btnTouch);
         btnSwipe = findViewById(R.id.btnSwipe);
+        btnMove = findViewById(R.id.btnMove);
     }
 
     public void setEvents(){
@@ -39,6 +40,14 @@ public class GestureActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(GestureActivity.this, SwipeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnMove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(GestureActivity.this, MoveViewActivity.class);
                 startActivity(intent);
             }
         });
