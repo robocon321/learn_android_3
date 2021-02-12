@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.GestureDetector;
 import android.view.View;
 import android.widget.Button;
 
@@ -12,6 +13,7 @@ import com.example.learnandroid3.utils.MessageService;
 
 public class MainActivity extends AppCompatActivity {
     Button btnRecyclerView, btnTabLayout, btnWindowManager, btnContact, btnOkHttp;
+    Button btnGesture;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         btnWindowManager = findViewById(R.id.btnWindowManager);
         btnContact = findViewById(R.id.btnContact);
         btnOkHttp = findViewById(R.id.btnOkHttp);
+        btnGesture = findViewById(R.id.btnGesture);
     }
 
     public void setEVents(){
@@ -67,6 +70,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, OkHttpActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnGesture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, GestureActivity.class);
                 startActivity(intent);
             }
         });

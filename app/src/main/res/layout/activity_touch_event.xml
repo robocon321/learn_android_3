@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/txtTouch"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Touch here"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+</LinearLayout>

@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -16,7 +16,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnAndroid3">
-        <activity android:name=".activity.OkHttpPostRequestActivity"/>
+        <activity android:name=".activity.TouchEventActivity"></activity>
+        <activity android:name=".activity.GestureActivity" />
+        <activity android:name=".activity.OkHttpPostRequestActivity" />
         <activity android:name=".activity.OkHttpReadImageActivity" />
         <activity android:name=".activity.OkHttpReadURLActivity" />
         <activity android:name=".activity.OkHttpActivity" />
