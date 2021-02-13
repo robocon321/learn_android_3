@@ -13,7 +13,7 @@ import com.example.learnandroid3.utils.MessageService;
 
 public class MainActivity extends AppCompatActivity {
     Button btnRecyclerView, btnTabLayout, btnWindowManager, btnContact, btnOkHttp;
-    Button btnGesture;
+    Button btnGesture, btnViewFlipper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         btnContact = findViewById(R.id.btnContact);
         btnOkHttp = findViewById(R.id.btnOkHttp);
         btnGesture = findViewById(R.id.btnGesture);
+        btnViewFlipper = findViewById(R.id.btnViewFlipper);
     }
 
     public void setEVents(){
@@ -78,6 +79,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, GestureActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnViewFlipper.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ViewFlipperActivity.class);
                 startActivity(intent);
             }
         });

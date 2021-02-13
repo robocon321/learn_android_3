@@ -16,7 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnAndroid3">
-        <activity android:name=".activity.ScaleActivity"></activity>
+        <activity android:name=".activity.ViewFlipperActivity"></activity>
+        <activity android:name=".activity.ScaleActivity" />
         <activity android:name=".activity.MoveViewActivity" />
         <activity android:name=".activity.SwipeActivity" />
         <activity android:name=".activity.TouchEventActivity" />
